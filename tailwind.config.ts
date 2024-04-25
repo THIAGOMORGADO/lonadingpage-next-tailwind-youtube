@@ -6,14 +6,23 @@ const config: Config = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  // Sentando variavel de core no tailwind
   theme: {
     extend: {
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        'img_bg_hero': "url('../assets/bg-hero.jpg')"
       },
+      colors: {
+        'primary-color': '#106eb0',
+        'primary-orange': '#ec7000',
+        'primary-gray': '#33303e',
+        'secondy-gray': '#4e4b59',
+        'gray-phone': '#f4f4f4',
+        'txt-gray': '#7d7786',
+        'opacity-gray': 'rgba(100, 80, 57, 0.1)'
+      }
     },
+
   },
   plugins: [],
 };
